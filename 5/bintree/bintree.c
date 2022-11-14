@@ -32,6 +32,4 @@ void print_inorder(const Bintree *bintree) {
 
 unsigned int _count(const Bintree *bintree) {
     return (bintree->left == NULL ? 0 : 1 + _count(bintree->left)) + (bintree->right == NULL ? 0 : 1 + _count(bintree->right));
-    
-    
 }
