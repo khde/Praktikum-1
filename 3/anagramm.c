@@ -14,6 +14,7 @@ bool ist_anagramm(char  *s1, char *s2) {
 	if (strl != strlen(s2)) {
 		return false;
 	}
+	
 	for (size_t k = 0; k < strl; k++) {
 		count1[tolower(s1[k])]++;
 		count2[tolower(s2[k])]++;
