@@ -1,3 +1,5 @@
+#ifndef BINTREE_H
+#define BINTREE_H
 
 typedef struct Bintree {
     struct Bintree *left;
@@ -9,3 +11,5 @@ extern struct Bintree* konstrukt_bintree(unsigned int tiefe);
 extern void print_inorder(const Bintree *bintree);
 extern unsigned int _count(const Bintree *bintree);
 #define count(x) (_count(x) + 1)
+
+#endif
